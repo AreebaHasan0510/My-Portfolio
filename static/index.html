@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Areeba Hasan — Data Analyst | Data Scientist Portfolio</title>
+  <meta name="description" content="Portfolio of Areeba Hasan - Data Analyst & Data Scientist specializing in Python, FastAPI, Machine Learning, Power BI, and AI applications.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Chart.js for Interactive Visualizations -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="/static/css/style.css">
+  <link rel="stylesheet" href="/static/css/demos.css">
+</head>
+<body>
+
+  <!-- Particle Mesh Network Canvas Background -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="brand-logo">
+        <div class="logo-badge">AH</div>
+        <span>Areeba<span class="gradient-text">.Hasan</span></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#hero" class="nav-link active">About</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects & Demos</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="/api/download-resume" class="btn btn-secondary btn-sm" download>
+          <i data-lucide="download"></i> PDF Resume
+        </a>
+        <a href="#projects" class="btn btn-primary btn-sm">
+          <i data-lucide="sparkles"></i> API Demos
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="status-badge">
+          <span class="pulse-dot"></span>
+          <span>Available for Data Science & Analyst Roles</span>
+        </div>
+
+        <h1 class="hero-name">Areeba <span class="gradient-text">Hasan</span></h1>
+        <div class="hero-subtitle">Data Analyst <span style="color:var(--primary);">|</span> Data Scientist</div>
+
+        <p class="hero-bio">
+          Enthusiastic final-year Computer Science student specializing in Data Science. Skilled in building intelligent ML models, interactive Power BI dashboards, and high-performance FastAPI backends with real-time predictions and data visualization.
+        </p>
+
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">
+            <i data-lucide="play-circle"></i> Launch Live API Demos
+          </a>
+          <a href="#resume" class="btn btn-secondary">
+            <i data-lucide="file-text"></i> Interactive Resume
+          </a>
+          <a href="/api/download-resume" class="btn btn-outline-cyan" download>
+            <i data-lucide="download"></i> Download Resume
+          </a>
+        </div>
+
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-value">1+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">5+</div>
+            <div class="stat-label">ML & AI Projects</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">+15%</div>
+            <div class="stat-label">Profit Margin Boost</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-value">3+</div>
+            <div class="stat-label">Hackathons & Badges</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Avatar & Live FastAPI Card -->
+      <div class="hero-avatar-wrapper">
+        <div class="hero-avatar-card">
+          <div class="avatar-header">
+            <div class="avatar-circle">AH</div>
+            <div class="avatar-info">
+              <h3>Areeba Hasan</h3>
+              <p>B.Tech CS & Engineering (Data Science)</p>
+              <div style="font-size:0.85rem; color:var(--text-muted); margin-top:4px;">
+                <i data-lucide="map-pin" style="width:14px; display:inline;"></i> Lucknow, UP, India
+              </div>
+            </div>
+          </div>
+
+          <div class="terminal-box">
+            <div class="terminal-header">
+              <span class="dot dot-red"></span>
+              <span class="dot dot-yellow"></span>
+              <span class="dot dot-green"></span>
+              <span style="font-size:0.75rem; color:var(--text-muted); margin-left:6px;">fastapi_server.py</span>
+            </div>
+            <div>$ uvicorn app:app --port 8000</div>
+            <div><span style="color:#60a5fa;">INFO</span>: Application startup complete.</div>
+            <div><span style="color:#34d399;">STATUS</span>: Fraud Engine, BI API & AI Coach Ready!</div>
+            <div><span style="color:#f472b6;">SYSTEM</span>: 100% FastAPI Rest Backend</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="file-text"></i> Curriculum Vitae</div>
+        <h2 class="section-title">Interactive <span class="gradient-text">Resume Viewer</span></h2>
+        <p class="section-desc">Explore visual resume cards or view the official PDF directly in the browser.</p>
+      </div>
+
+      <div class="resume-tabs">
+        <button class="tab-btn active" data-tab="visual">
+          <i data-lucide="layout-grid"></i> Visual Resume Overview
+        </button>
+        <button class="tab-btn" data-tab="pdf">
+          <i data-lucide="file"></i> Embedded Official PDF
+        </button>
+      </div>
+
+      <!-- Tab 1: Visual Resume -->
+      <div id="resume-visual" class="resume-tab-content active">
+        <div class="glass-card" style="margin-bottom:2rem;">
+          <div style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:1rem; margin-bottom:1.5rem;">
+            <div>
+              <h3 style="font-size:1.6rem; font-weight:700;">Areeba Hasan</h3>
+              <p style="color:var(--accent-cyan); font-weight:600;">Data Analyst | Data Scientist</p>
+            </div>
+            <a href="/api/download-resume" class="btn btn-primary btn-sm" download>
+              <i data-lucide="download"></i> Download PDF Copy
+            </a>
+          </div>
+          <p style="color:var(--text-muted); line-height:1.7;">
+            Enthusiastic final-year Computer Science student specializing in Data Science, with hands-on experience in Python, Machine Learning, AI Data Analytics, and backend development. Skilled in building data-driven applications using FastAPI, MySQL, MongoDB, Power BI, and modern web technologies.
+          </p>
+        </div>
+
+        <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:1.5rem;">
+          <div class="glass-card">
+            <h4 style="font-size:1.1rem; color:var(--accent-cyan); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+              <i data-lucide="book-open"></i> Education
+            </h4>
+            <div style="font-weight:700;">B.Tech — Computer Science & Engineering (Data Science)</div>
+            <div style="color:var(--text-muted); font-size:0.9rem;">Dr. A.P.J. Abdul Kalam Technical University</div>
+            <div style="color:var(--accent-emerald); font-size:0.85rem; margin-top:0.3rem;">2023 – 2027 (Expected) · Lucknow, UP</div>
+          </div>
+
+          <div class="glass-card">
+            <h4 style="font-size:1.1rem; color:var(--accent-cyan); margin-bottom:1rem; display:flex; align-items:center; gap:0.5rem;">
+              <i data-lucide="briefcase"></i> Recent Internships
+            </h4>
+            <div style="margin-bottom:0.8rem;">
+              <div style="font-weight:700;">Python Developer Intern</div>
+              <div style="color:var(--text-muted); font-size:0.88rem;">Client Code AI Innovation Pvt. Ltd (Remote)</div>
+              <div style="color:var(--accent-emerald); font-size:0.82rem;">June 2026 – July 2026</div>
+            </div>
+            <div>
+              <div style="font-weight:700;">AI & Data Analytics Intern</div>
+              <div style="color:var(--text-muted); font-size:0.88rem;">In Amigos Foundation (Virtual)</div>
+              <div style="color:var(--accent-emerald); font-size:0.82rem;">June 2026 – July 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab 2: Embedded PDF -->
+      <div id="resume-pdf" class="resume-tab-content">
+        <div style="text-align:center; margin-bottom:1rem;">
+          <a href="/api/download-resume" class="btn btn-outline-cyan btn-sm" download>
+            <i data-lucide="download"></i> Download Resume PDF File directly
+          </a>
+        </div>
+        <iframe src="/static/assets/Areeba_Hasan_Resume.pdf" class="pdf-viewer-frame"></iframe>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="code-2"></i> Tech Stack</div>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills Matrix</span></h2>
+        <p class="section-desc">Comprehensive toolkit across Data Science, Machine Learning, BI Dashboards, and FastAPI development.</p>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-chip active" data-filter="all">All Skills</button>
+        <button class="filter-chip" data-filter="Languages">Languages</button>
+        <button class="filter-chip" data-filter="Frameworks & APIs">Frameworks & APIs</button>
+        <button class="filter-chip" data-filter="Machine Learning & NLP">Machine Learning & NLP</button>
+        <button class="filter-chip" data-filter="Data Analytics & BI">Data Analytics & BI</button>
+        <button class="filter-chip" data-filter="Databases & Tools">Databases & Tools</button>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Category 1: Languages -->
+        <div class="skill-category-card" data-category="Languages">
+          <div class="category-title">
+            <div class="category-icon"><i data-lucide="code"></i></div>
+            <h3>Programming Languages</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">95%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SQL (MySQL)</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">90%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">85%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">TypeScript</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">80%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 80%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Category 2: Frameworks & APIs -->
+        <div class="skill-category-card" data-category="Frameworks & APIs">
+          <div class="category-title">
+            <div class="category-icon"><i data-lucide="cpu"></i></div>
+            <h3>Frameworks & APIs</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">FastAPI</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">92%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Vector DBs (Chroma DB)</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">88%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Node.js & Express.js</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">82%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 82%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Category 3: Machine Learning & NLP -->
+        <div class="skill-category-card" data-category="Machine Learning & NLP">
+          <div class="category-title">
+            <div class="category-icon"><i data-lucide="brain"></i></div>
+            <h3>Machine Learning & NLP</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Scikit-learn</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">90%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Classification & Feature Engg</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">92%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Sentence Transformers & AI</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">85%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 85%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Category 4: Data Analytics & BI -->
+        <div class="skill-category-card" data-category="Data Analytics & BI">
+          <div class="category-title">
+            <div class="category-icon"><i data-lucide="bar-chart-2"></i></div>
+            <h3>Data Analytics & BI</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Power BI</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">94%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 94%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Pandas & NumPy</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">95%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 95%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Tableau</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">88%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 88%;"></div></div>
+          </div>
+        </div>
+
+        <!-- Category 5: Databases & Tools -->
+        <div class="skill-category-card" data-category="Databases & Tools">
+          <div class="category-title">
+            <div class="category-icon"><i data-lucide="database"></i></div>
+            <h3>Databases & DevOps</h3>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MySQL</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">90%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 90%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">MongoDB</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">84%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 84%;"></div></div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Git & GitHub</span>
+              <span class="skill-pct" style="color:var(--accent-cyan);">92%</span>
+            </div>
+            <div class="skill-level-bar"><div class="skill-progress" style="width: 92%;"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Experience & Education Timeline -->
+  <section id="experience" class="timeline-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="history"></i> Career Journey</div>
+        <h2 class="section-title">Experience & <span class="gradient-text">Education</span></h2>
+        <p class="section-desc">Hands-on industry developer internships and academic foundations in Data Science.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <!-- Work Experience Column -->
+        <div>
+          <div class="timeline-column-title">
+            <i data-lucide="briefcase" style="color:var(--primary)"></i> Work Experience
+          </div>
+          <div class="timeline-wrapper">
+            <!-- Experience Item 1 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">June 2026 – July 2026</div>
+              <div class="timeline-role">Python Developer Intern</div>
+              <div class="timeline-company">Client Code AI Innovation Pvt. Ltd · Faridabad, India (Remote)</div>
+              <ul class="timeline-bullets">
+                <li>Developed and implemented Python-based applications focusing on writing clean, efficient code and debugging.</li>
+                <li>Applied Python programming concepts to build backend modules and API services for real-world tasks.</li>
+                <li>Collaborated on refactoring application code structure and reducing execution overhead.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">REST APIs</span>
+                <span class="tech-pill">Debugging</span>
+              </div>
+            </div>
+
+            <!-- Experience Item 2 -->
+            <div class="timeline-item">
+              <div class="timeline-dot"></div>
+              <div class="timeline-date">June 2026 – July 2026</div>
+              <div class="timeline-role">AI & Data Analytics Intern</div>
+              <div class="timeline-company">In Amigos Foundation · Virtual</div>
+              <ul class="timeline-bullets">
+                <li>Analyzed complex datasets to extract meaningful trends and support data-driven decision-making.</li>
+                <li>Generated AI-powered insights and business KPI reports for executive evaluation.</li>
+                <li>Automated data cleaning and transformation pipelines using Python Pandas and SQL.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">Python</span>
+                <span class="tech-pill">Pandas</span>
+                <span class="tech-pill">Data Analytics</span>
+                <span class="tech-pill">SQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education Column -->
+        <div>
+          <div class="timeline-column-title">
+            <i data-lucide="graduation-cap" style="color:var(--accent-cyan)"></i> Education
+          </div>
+          <div class="timeline-wrapper">
+            <div class="timeline-item">
+              <div class="timeline-dot" style="background:var(--accent-cyan)"></div>
+              <div class="timeline-date">2023 – 2027 (Expected)</div>
+              <div class="timeline-role">B.Tech — Computer Science & Engineering (Data Science)</div>
+              <div class="timeline-company">Dr. A.P.J. Abdul Kalam Technical University (AKTU) · Lucknow, UP</div>
+              <ul class="timeline-bullets">
+                <li>Specializing in Data Science, Machine Learning Algorithms, Data Warehousing, and Database Systems.</li>
+                <li>Key Coursework: Machine Learning, Artificial Intelligence, Data Structures, Relational & NoSQL Databases, Web Architecture.</li>
+              </ul>
+              <div class="tech-pills">
+                <span class="tech-pill">Data Science</span>
+                <span class="tech-pill">Machine Learning</span>
+                <span class="tech-pill">FastAPI</span>
+                <span class="tech-pill">MySQL</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Featured Projects & Live Demos Showcase -->
+  <section id="projects" class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="sparkles"></i> Portfolio Work</div>
+        <h2 class="section-title">Featured Projects & <span class="gradient-text">Live API Demos</span></h2>
+        <p class="section-desc">Click <strong>"Launch Interactive Demo"</strong> on any project to test real FastAPI endpoints live!</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1: Credit Card Fraud Detection -->
+        <div class="project-card">
+          <div>
+            <div class="project-badge">Machine Learning & Security</div>
+            <h3 class="project-title">Credit Card Fraud Detection System</h3>
+            <p class="project-summary">
+              Advanced credit card fraud detection system using Python & Scikit-learn, featuring a real-time FastAPI inference engine, authentication, and MySQL logging.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <div class="metric-val">99.4%</div>
+                <div class="metric-lbl">Accuracy</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">&lt;15ms</div>
+                <div class="metric-lbl">Latency</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">XGBoost</div>
+                <div class="metric-lbl">Engine</div>
+              </div>
+            </div>
+            <div class="tech-pills" style="margin-bottom:1.5rem;">
+              <span class="tech-pill">HTML</span>
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">Machine Learning</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Python</span>
+            </div>
+          </div>
+          <button class="btn btn-primary launch-demo-btn" data-demo="fraud-detection">
+            <i data-lucide="play"></i> Launch ML Risk Simulator
+          </button>
+        </div>
+
+        <!-- Project 2: Sales Analysis Dashboard -->
+        <div class="project-card">
+          <div>
+            <div class="project-badge">Data Analytics & Power BI</div>
+            <h3 class="project-title">Sales Analysis Dashboard</h3>
+            <p class="project-summary">
+              Interactive sales analysis dashboard built on retail sales data to visualize KPIs, track regional distribution, and optimize product margins.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <div class="metric-val" style="color:var(--accent-emerald)">+15.1%</div>
+                <div class="metric-lbl">Profit Boost</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">$1.48M</div>
+                <div class="metric-lbl">Tracked Revenue</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">Power BI</div>
+                <div class="metric-lbl">Platform</div>
+              </div>
+            </div>
+            <div class="tech-pills" style="margin-bottom:1.5rem;">
+              <span class="tech-pill">Power BI</span>
+              <span class="tech-pill">DAX</span>
+              <span class="tech-pill">Data Modeling</span>
+              <span class="tech-pill">KPI Analytics</span>
+            </div>
+          </div>
+          <button class="btn btn-primary launch-demo-btn" data-demo="sales-analytics">
+            <i data-lucide="bar-chart-2"></i> Launch Interactive BI Dashboard
+          </button>
+        </div>
+
+        <!-- Project 3: AI Interview Coach -->
+        <div class="project-card">
+          <div>
+            <div class="project-badge">Generative AI & Vector Search</div>
+            <h3 class="project-title">AI Interview Coach System</h3>
+            <p class="project-summary">
+              AI-powered mock interview system using Python, FastAPI, and Chroma DB vector search to evaluate technical responses and provide personalized scoring.
+            </p>
+            <div class="project-metrics">
+              <div class="metric-box">
+                <div class="metric-val">Chroma DB</div>
+                <div class="metric-lbl">Vector DB</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">NLP AI</div>
+                <div class="metric-lbl">Scoring</div>
+              </div>
+              <div class="metric-box">
+                <div class="metric-val">Real-time</div>
+                <div class="metric-lbl">Feedback</div>
+              </div>
+            </div>
+            <div class="tech-pills" style="margin-bottom:1.5rem;">
+              <span class="tech-pill">FastAPI</span>
+              <span class="tech-pill">JavaScript</span>
+              <span class="tech-pill">MySQL</span>
+              <span class="tech-pill">Chroma DB</span>
+              <span class="tech-pill">Sentence Transformers</span>
+            </div>
+          </div>
+          <button class="btn btn-primary launch-demo-btn" data-demo="interview-coach">
+            <i data-lucide="bot"></i> Launch AI Interview Sandbox
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="certifications-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="award"></i> Achievements</div>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Hackathons</span></h2>
+        <p class="section-desc">Recognitions and verified skill credentials from Google Cloud, NoviTech, and foundations.</p>
+      </div>
+
+      <div class="certs-grid">
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-issuer">Google Cloud</div>
+            <i data-lucide="award" style="color:var(--accent-amber)"></i>
+          </div>
+          <h3 class="cert-title">GEN AI Exchange Hackathon 2025</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Certificate of Participation for building GenAI solutions on Google Cloud Platform.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-issuer">Google Developer Student Clubs</div>
+            <i data-lucide="award" style="color:var(--accent-amber)"></i>
+          </div>
+          <h3 class="cert-title">Solution Challenge 2026</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Certificate of Participation for successful real-world software prototype development.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-issuer">NoviTech Pvt. Ltd</div>
+            <i data-lucide="award" style="color:var(--accent-cyan)"></i>
+          </div>
+          <h3 class="cert-title">Data Analyst Certification</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Participation and skill certification in business data analysis and reporting.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-issuer">In Amigos Foundation</div>
+            <i data-lucide="award" style="color:var(--primary)"></i>
+          </div>
+          <h3 class="cert-title">AI Data Analytics Internship</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Completed virtual internship extracting AI-driven business insights.</p>
+        </div>
+
+        <div class="cert-card">
+          <div class="cert-header">
+            <div class="cert-issuer">Client Code AI Innovation</div>
+            <i data-lucide="award" style="color:var(--primary)"></i>
+          </div>
+          <h3 class="cert-title">Python Development Internship</h3>
+          <p style="color:var(--text-muted); font-size:0.85rem;">Completed internship engineering Python backend modules & API solutions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag"><i data-lucide="mail"></i> Get In Touch</div>
+        <h2 class="section-title">Let's Connect & <span class="gradient-text">Collaborate</span></h2>
+        <p class="section-desc">Interested in discussing Data Science, Python FastAPI development, or Data Analytics roles?</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card glass-card">
+          <h3 style="font-size:1.4rem; font-weight:700;">Contact Information</h3>
+          
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="mail"></i></div>
+            <div class="info-text">
+              <h4>Email</h4>
+              <p><a href="mailto:areebhas0510@gmail.com" style="color:inherit; text-decoration:none;">areebhas0510@gmail.com</a></p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="phone"></i></div>
+            <div class="info-text">
+              <h4>Phone</h4>
+              <p>+91-9628250000</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i data-lucide="map-pin"></i></div>
+            <div class="info-text">
+              <h4>Location</h4>
+              <p>Lucknow, UP, India</p>
+            </div>
+          </div>
+
+          <div style="margin-top:1rem;">
+            <h4 style="font-size:0.9rem; color:var(--text-muted); margin-bottom:0.8rem;">Social Professional Links</h4>
+            <div style="display:flex; gap:1rem; flex-wrap:wrap;">
+              <a href="https://www.linkedin.com/in/areeba-hasan-4731b9318" target="_blank" class="btn btn-secondary btn-sm"><i data-lucide="linkedin"></i> LinkedIn</a>
+              <a href="https://github.com/AreebaHasan0510" target="_blank" class="btn btn-secondary btn-sm"><i data-lucide="github"></i> GitHub</a>
+              <a href="http://localhost:8000" target="_blank" class="btn btn-secondary btn-sm"><i data-lucide="globe"></i> Portfolio</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card">
+          <form id="contact-form" class="contact-form">
+            <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem;">
+              <div class="form-group">
+                <label for="contact-name">Your Name</label>
+                <input type="text" id="contact-name" class="form-control" placeholder="e.g. John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email">Your Email</label>
+                <input type="email" id="contact-email" class="form-control" placeholder="e.g. john@company.com" required>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-subject">Subject</label>
+              <input type="text" id="contact-subject" class="form-control" placeholder="Job Opportunity / Project Inquiry" required>
+            </div>
+
+            <div class="form-group">
+              <label for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" placeholder="Write your message here..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="justify-content:center; width:100%;">
+              <i data-lucide="send"></i> Send Message via FastAPI
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Toast Notification Alert -->
+  <div id="toast-alert" class="toast-alert">
+    <i data-lucide="check-circle" style="color:var(--accent-emerald)"></i>
+    <span id="toast-message">Message sent successfully!</span>
+  </div>
+
+  <!-- Interactive Project Demo Modal Container -->
+  <div id="demo-modal-overlay" class="demo-modal-overlay">
+    <div class="demo-modal-container">
+      <div class="modal-header">
+        <div class="modal-title-box">
+          <h3 id="demo-modal-title" style="font-size:1.2rem; font-weight:700; display:flex; align-items:center; gap:0.5rem;">
+            Project Demo
+          </h3>
+          <span class="api-badge">LIVE FASTAPI ENGINE</span>
+        </div>
+        <button id="demo-modal-close" class="modal-close-btn">&times;</button>
+      </div>
+      <div id="demo-modal-body" class="modal-body">
+        <!-- Dynamic Demo Playground Rendered Here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2026 Areeba Hasan. Built with HTML5, CSS3, JavaScript & FastAPI.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="/static/js/particles.js"></script>
+  <script src="/static/js/main.js"></script>
+  <script src="/static/js/demos.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+=== PARAGRAPHS ===
+[0] AREEBA HASAN
+[1] Data Analyst |  Data Scientist
+[2] areebhas0510@gmail.com  |  +91-9628250000  |  Lucknow, UP, India  |  LinkedIn  |  GitHub
+[5] PROFILE SUMMARY
+[7] Enthusiastic final-year Computer Science student specializing in Data Science, with hands-on experience in Python, Machine Learning, AI Data Analytics, and backend development. Skilled in building data-driven applications using Fast API, MySQL, MongoDB, React.js, Power BI, and modern web technologies. Experienced in developing real-world projects, including an Advanced Credit Card Fraud Detection system integrating machine learning, authentication, dashboard visualization, and database connectivity. Strong problem-solving abilities with a passion for leveraging AI, data, and technology to build practical and intelligent solutions.
+[8] .
+[9] TECHNICAL SKILLS
+[11] Languages: Python, JavaScript, Typescript
+[12] Frameworks & APIs: Node.js, Express.js, React.js, Next.js, Fast API, Vector DBs (Chroma DB)
+[13] Machine Learning / NLP: Scikit-learn, Classification, Feature Engineering
+[14] Dashboard Tools:  Tableau, Power BI
+[15] Data & Deployment: Pandas, NumPy, SQL, MongoDB, Git/GitHub,
+[16] EXPERIENCE
+[18] Python Developer Intern 	June 2026 – Jul 2026
+[19] Client Code AI Innovation Pvt.Ltd | Faridabad, India · Remote
+[20] Developed and implemented Python-based applications, focusing on writing efficient code, debugging, and applying Python programming concepts to real-world tasks.
+[21] AI & Data Analytics Intern 	June 2026 – July2026
+[22] In Amigos Foundation| Virtual.
+[23] Analyzed data and generated AI-powered insights to identify meaningful trends and support data-driven decision-making. .
+[24] PROJECTS
+[26] Credit Card Fraud Detection — HTML, FASTAPI, Machine Learning, MY SQL, Python
+[27] Developed a Advanced credit card fraud detection system using python, integrating machine learning models to identify fraudulent transaction with high accuracy.
+[28] Built user friendly web application using FASTAPI with login authentication real– time prediction, and dashboard visualization
+[29] Connected the system with My SQL database for storing transaction data and results
+[30] Sales Analysis Dashboard — Power BI
+[31] Built an interactive sales analysis dashboard using retail sales data to visualize KPI’s track regional performance and uncover insights that improved profit margin by 15%
+[32] AI Interview Coach- HTML, FASTAPI, Java Script, MY SQL, Python, Pandas, Chroma DB, Speech- to -text, text-to-speech, Sentence Transformers
+[33] Developed an AI-powered mock interview system using Python, Fast API, JavaScript, and MySQL that conducts role-based interviews, analyzes text/voice responses, generates performance scores, and provides personalized feedback and interview analytics.
+[35] EDUCATION
+[37] B. Tech — Computer Science & Engineering (Data Science) 	2023 – 2027 (Expected)
+[38] Dr. A.P.J. Abdul Kalam Technical University | Lucknow, Uttar Pradesh, India
+[39] CERTIFICATIONS
+[41] Certificate of participation for the GEN AI Exchange Hackathon 2025 — Google Cloud
+[42] Data Analyst Participation Certificate — NoviTech Pvt.Ltd
+[43] Certificate of Internship in AI Data Analytics — In Amigos Foundation
+[44] Certificate of Internship in python Development — Client Code AI Innovation Pvt.Ltd
+[45] Certificate of participation in solution Challenge2026for the successful prototype
+
+=== TABLES ===
