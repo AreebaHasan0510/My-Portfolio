@@ -10,7 +10,6 @@ PROFILE_DATA = {
     "location": "Lucknow, UP, India",
     "github": "https://github.com/AreebaHasan0510",
     "linkedin": "https://www.linkedin.com/in/areeba-hasan-4731b9318",
-    "portfolio": "http://localhost:8000",
     "status": "Available for Data Science & Analyst Roles",
     "summary": (
         "Enthusiastic final-year Computer Science student specializing in Data Science, "
@@ -22,7 +21,7 @@ PROFILE_DATA = {
         "and technology to build practical and intelligent solutions."
     ),
     "stats": [
-        {"label": "Years Experience", "value": "1+", "suffix": "Yrs"},
+        {"label": "ML Model Accuracy", "value": "99.4%", "suffix": "Precision"},
         {"label": "ML & Analytics Projects", "value": "5+", "suffix": "Projects"},
         {"label": "Profit Margin Boosted", "value": "15%", "suffix": "Uplift"},
         {"label": "Hackathons & Awards", "value": "3+", "suffix": "Badges"}
@@ -130,16 +129,16 @@ PROJECTS_DATA = [
     },
     {
         "id": "sales-analysis-dashboard",
-        "title": "Interactive Sales Analysis Dashboard",
+        "title": "Sales Analysis Dashboard",
         "category": "Data Analytics & Business Intelligence",
         "subtitle": "Retail Sales Performance & Profitability Optimization",
         "period": "2026",
         "technologies": ["Power BI", "DAX", "Data Modeling", "Excel", "Data Visualization"],
         "summary": "Comprehensive Business Intelligence dashboard analyzing retail sales metrics, regional distribution, and profitability levers.",
         "points": [
-            "Built an interactive Power BI sales dashboard visualizing core revenue, order frequency, and regional KPIs.",
+            "Built a Power BI sales dashboard visualizing core revenue, order frequency, and regional KPIs.",
             "Uncovered strategic sales and pricing insights that directly improved overall profit margin by 15%.",
-            "Implemented interactive slicing by region, product category, and temporal trends for executive leadership."
+            "Implemented dynamic slicing by region, product category, and temporal trends for executive leadership."
         ],
         "has_demo": True,
         "demo_type": "sales-analytics",

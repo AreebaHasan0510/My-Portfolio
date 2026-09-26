@@ -12,7 +12,7 @@ from api.routes import router as api_router
 
 app = FastAPI(
     title="Areeba Hasan - Data Science & Analyst Portfolio",
-    description="Interactive Portfolio & API Service for Areeba Hasan",
+    description="Advanced Portfolio & API Service for Areeba Hasan",
     version="2.0.0"
 )
 

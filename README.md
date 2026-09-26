@@ -1,4 +1,4 @@
-# 🌟 Areeba Hasan — Interactive Portfolio Web Application
+# 🌟 Areeba Hasan — Advanced Portfolio Web Application
 
 > **Data Analyst | Data Scientist**  
 > *Specializing in Python, Machine Learning, FastAPI Backend Architecture, Power BI Analytics & NLP Applications.*
@@ -15,7 +15,7 @@
 
 ## 🚀 Projects & Live Demos
 1. **Credit Card Fraud Detection System**: Real-time ML risk prediction engine built with Scikit-learn, FastAPI, and MySQL logging.
-2. **Sales Analytics Dashboard**: Interactive BI dashboard analyzing retail metrics and boosting profit margins by 15.1%.
+2. **Sales Analytics Dashboard**: BI dashboard analyzing retail metrics and boosting profit margins by 15.1%.
 3. **AI Interview Coach & Evaluator**: Voice & text mock interview evaluator using Sentence Transformers & Chroma DB vector search.
 
 ---
