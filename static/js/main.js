@@ -37,6 +37,36 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+  // 1b. Mobile Hamburger Navigation Menu Toggle
+  const hamburgerBtn = document.getElementById('hamburger-btn');
+  const navLinksContainer = document.getElementById('nav-links');
+
+  if (hamburgerBtn && navLinksContainer) {
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      navLinksContainer.classList.toggle('active');
+      document.body.classList.toggle('no-scroll', navLinksContainer.classList.contains('active'));
+    });
+
+    // Close menu when a link inside nav is clicked
+    navLinksContainer.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        navLinksContainer.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      });
+    });
+
+    // Close menu when clicking outside navbar
+    document.addEventListener('click', (e) => {
+      if (!navbar.contains(e.target) && navLinksContainer.classList.contains('active')) {
+        hamburgerBtn.classList.remove('active');
+        navLinksContainer.classList.remove('active');
+        document.body.classList.remove('no-scroll');
+      }
+    });
+  }
+
   // 2. Resume Tab Switching
   const resumeTabBtns = document.querySelectorAll('.resume-tabs .tab-btn');
   const resumeTabContents = document.querySelectorAll('.resume-tab-content');

@@ -276,7 +276,54 @@ input[type="range"] {
 }
 
 @media (max-width: 768px) {
-  .demo-grid-2col, .charts-grid-2col, .kpi-cards-row {
+  .demo-modal-overlay {
+    padding: 0.8rem;
+  }
+
+  .demo-modal-container {
+    max-height: 94vh;
+    border-radius: var(--radius-md);
+  }
+
+  .modal-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .modal-body {
+    padding: 1.2rem;
+  }
+
+  .demo-grid-2col, .charts-grid-2col {
     grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .kpi-cards-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.6rem;
+  }
+
+  .chart-container {
+    height: 220px;
   }
 }
+
+@media (max-width: 480px) {
+  .modal-title-box h3 {
+    font-size: 1rem;
+  }
+
+  .api-badge {
+    font-size: 0.65rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .demo-panel {
+    padding: 1rem;
+  }
+
+  .risk-gauge-box {
+    padding: 1rem;
+  }
+}
+
